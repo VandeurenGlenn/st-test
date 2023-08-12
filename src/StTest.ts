@@ -1,6 +1,6 @@
 import { html, css, LitElement } from 'lit';
 import { property } from 'lit/decorators.js';
-import commonmark from "commonmark";
+import * as commonmark from 'commonmark';
 
 export class StTest extends LitElement {
   static styles = css`
@@ -24,7 +24,6 @@ export class StTest extends LitElement {
   }
 
   render() {
-
     return html`
       <h2>${this.header} Nr. ${this.counter}!</h2>
       <h3>markdown:</h3>
